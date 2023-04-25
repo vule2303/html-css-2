@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-heading: Sen, sans-serif;
+    --primary-color: #ffb900;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 0 16px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffffff;
+    background: #171100;
+    border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+/* HEADER */
+.header {
+    background-color: #fffcf4;
+}
+
+header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 8px;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    background-color: #fffcf4;
+    z-index: 1;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    position: relative;
+    padding: 8px 21px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #5f5b53;
+}
+
+.navbar a:hover,
+.navbar li.active a {
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.navbar li.active a::after {
+    position: absolute;
+    left: 22px;
+    bottom: 6px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
+.body .sign-up-btn {
+    min-width: 144px;
+}
+/* hero */
+.hero {
+    padding-top: 56px;
+    background: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-block {
+    position: relative;
+    width: 48%;
+}
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero .hero-summary {
+    position: absolute;
+    padding: 28px 24px;
+    right: -8px;
+    bottom: 51px;
+    width: 270px;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.hero .hero-summary .item {
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-summary .item + .item {
+    margin-top: 14px;
+}
+
+.hero-summary .item:nth-of-type(2) .icon {
+    background: #fcefff;
+}
+
+.hero-summary .item:nth-of-type(3) .icon {
+    background: #ebeaff;
+}
+
+.hero .hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff9e8;
+}
+
+.hero-summary .info {
+    margin-left: 16px;
+}
+
+.hero-summary .lable {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.hero-summary .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.content-block .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.content-block .desc {
+    margin-top: 22px;
+    width: 470px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.content-block .cta-group {
+    display: flex;
+    align-items: center;
+    margin: 38px 0 48px 0;
+}
+
+.content-block .watch-video {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.content-block .watch-video .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.content-block .hero-cta {
+    min-width: 180px;
+    line-height: 64px;
+    background-color: var(--primary-color);
+}
+
+.hero .stats {
+    margin-top: 8px;
+}
+
+.hero .stats strong {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    padding-right: 5px;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+}
+
+.hero .stats strong:nth-of-type(2) {
+    padding-left: 28px;
+}
