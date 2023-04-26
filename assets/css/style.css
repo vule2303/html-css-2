@@ -85,6 +85,21 @@ a {
     color: #171100;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+
+.break-all {
+    word-break: break-all;
+}
 /* HEADER */
 .header {
     background-color: #fffcf4;
@@ -362,6 +377,7 @@ header .body {
 }
 
 .popular-button .title.course a {
+    padding-right: 8px;
     font-size: 1.8rem;
     line-height: 1.67;
     color: black;
